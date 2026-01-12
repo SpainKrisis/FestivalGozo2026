@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family:  'PoppinsRegular';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+:root{
+    --font-primary: 'PoppinsRegular';
+    --font-primary-bold: 'PoppinsBold';
+
+}
+
+html{
+    font-family: var(--font-primary);
+}
+
+body {
+ background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/Gozo25-fondo.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ overflow: hidden;
+
+ width: 100vw;
+ height: 100vh;
+
+
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 18px;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 150px;
+}
+
+.logo__img{
+    width: 100px;
+}
+
+.not__box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border: 2px solid snow;
+    padding: 15px 20px;
+}
+
+.not__p{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    color: snow;
+}
+
+
+#Modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.modal{
+    padding: 20px;
+    border: 5px solid snow;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.first__content{
+    display: flex;
+    height: 78px;
+    padding: 10px 0px;
+}
+
+#email{
+    width: 480px;
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+}
+
+.subbutton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:rgb(31, 110, 102);
+    color: snow;
+    border: none;
+    padding: 10px;
+
+}
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.a__modal{
+    color: rgb(31, 110, 102);
+    text-decoration: none;
+}
+
+.sub__p{
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* MAIN */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.left__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
+}
+
+h1{
+    font-size:55px;
+    font-family: var(--font-primary-bold);
+    background: url(../assets/circleElement.svg);
+    background-position: 85% -20px;
+    background-repeat: no-repeat;
+}
+
+.p__box{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.boton{
+    background-color: rgb(31, 110, 102);
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.timer__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer__h2{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.right__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster{
+    width: 360px;
+    height: 500px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 150px;
+}
+
+.footer__p{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: grey;
+}
